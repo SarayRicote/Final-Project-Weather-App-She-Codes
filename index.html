@@ -11,147 +11,156 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital@1&display=swap" rel="stylesheet" />
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-   <style>
-       html {
-  text-align: center;
-}
+    <style>
+        html {
+            text-align: center;
+        }
 
-body {
-  display: inline-block;
-  border: 5px solid rgb(13, 43, 212);
-  border-radius: 10px;
-  min-width: 500px;
-  max-width: 30%;
-  margin: 0 auto;
-  padding: 20px 30px;
-}
+        body {
+            display: inline-block;
+            border: 5px solid rgb(22, 22, 22);
+            border-radius: 10px;
+            min-width: 500px;
+            max-width: 30%;
+            margin: 0 auto;
+            padding: 20px 30px;
+        }
 
-.button-current-location {
-  background-color: yellow;
-  color: blue;
-  border: none;
-  border-radius: 3px;
-  transition: all 200ms ease-in-out;
-  position: relative;
-  font-family: "Courier Prime", monospace;
-  height: 28px;
-  width: 78px;
-}
+        .button-current-location {
+            background-color: blue;
+            color: black;
+            border: none;
+            border-radius: 3px;
+            transition: all 200ms ease-in-out;
+            position: relative;
+            font-family: "Courier Prime", monospace;
+            height: 28px;
+            width: 78px;
+        }
 
-.search-input {
-  border-radius: 4px;
-  position: relative;
-  left: 160px;
-  top: -33px;
-  display: inline;
-  border-color: yellow;
-}
+        .search-input {
+            border-radius: 4px;
+            position: relative;
+            left: 170px;
+            top: -33px;
+            display: inline;
+            border-color: blue;
+        }
 
-.search-button {
-  background: blue;
-  text-align: center;
-  height: 26px;
-  width: 30px;
-  border: none;
-  border-radius: 4px;
-  transition: all 200ms ease-in-out;
-  position: relative;
-  left: 160px;
-  top: -34px;
-}
+        .search-button {
+            background: blue;
+            text-align: center;
+            height: 26px;
+            width: 30px;
+            border: none;
+            border-radius: 4px;
+            transition: all 200ms ease-in-out;
+            position: relative;
+            left: 170px;
+            top: -34px;
+        }
 
-footer{text-align: center;}
+        footer {
+            text-align: center;
+        }
 
-h1 {
-  text-align: center;
-  font-family: "Courier Prime", monospace;
-}
+        h1 {
+            text-align: center;
+            font-family: "Courier Prime", monospace;
+        }
 
-.todayDate {
-  text-align: center;
-  font-family: "Courier Prime", monospace;
-}
+        .todayDate {
+            text-align: center;
+            font-family: "Courier Prime", monospace;
+        }
 
-#celsius-link {
-  font-size: 40px;
-  color: blue;
-  letter-spacing: -6px;
-  position: relative;
-  left: 10px;
-  top: 26px;
-}
+        #celsius-link {
+            font-size: 40px;
+            color: blue;
+            letter-spacing: -6px;
+            position: relative;
+            left: 10px;
+            top: 26px;
+        }
 
-.temperature-settings {
-  border-radius: 50%;
-  width: 120px;
-  height: 120px;
-  margin: 0 50px;
-}
+        .temperature-settings {
+            border-radius: 50%;
+            width: 120px;
+            height: 120px;
+            margin: 0 50px;
+        }
 
-.current-temperature {
-  font-size: 40px;
-  color: Blue;
-  position: relative;
-  left: 15px;
-  top: 26px;
-}
+        .current-temperature {
+            font-size: 40px;
+            color: Blue;
+            position: relative;
+            left: 15px;
+            top: 26px;
+        }
 
-#fahrenheit-link {
-  color: blue;
-  border-radius: 50%;
-  width: 60px;
-  height: 60px;
-  font-size: 40px;
-  padding: 10px 10px;
-  position: relative;
-  left: 15px;
-  top: 26px;
-}
+        #fahrenheit-link {
+            color: blue;
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+            font-size: 40px;
+            padding: 10px 10px;
+            position: relative;
+            left: 15px;
+            top: 26px;
+        }
 
-.emoji-current-weather {
-  font-size: 80px;
-  margin-top: 25px;
-  text-align: right;
-  padding: none;
-  margin-left: 220px;
-  margin-top: -90px;
-  line-height: 0;
-}
+        #emoji-current-weather {
+            font-size: 80px;
+            margin-top: 25px;
+            text-align: right;
+            padding: none;
+            margin-left: 260px;
+            margin-top: -165px;
+            line-height: 0;
+        }
 
-.current-weather-description {
-  font-weight: normal;
-  font-size: 20px;
-  text-align: right;
-  margin-top: 20px;
-  padding-right: 29px;
-  font-family: "Courier Prime", monospace;
-}
+        .current-weather-description {
+            font-weight: normal;
+            font-size: 20px;
+            text-align: right;
+            margin-top: -45px;
+            padding-right: 60px;
+            font-family: "Courier Prime", monospace;
+        }
 
-.parameters {
-  padding: 10px 10px;
-  border: 3px solid rgb(13, 43, 212);
-  text-align: left;
-  width: 100%;
-  font-family: "Courier Prime", monospace;
-}
+        .parameters {
+            padding: 10px 10px;
+            border: 3px solid rgb(22, 22, 22);
+            text-align: left;
+            width: 100%;
+            font-family: "Courier Prime", monospace;
+        }
 
-.forecast {
-  width: 100%;
-  text-align: center;
-  font-family: "Courier Prime", monospace;
-}
+        .forecast {
+            width: 100%;
+            text-align: center;
+            font-family: "Courier Prime", monospace;
+        }
 
-.forecast-temperature-min {
-  font-size: 18px;
-  font-family: "Courier Prime", monospace;
-}
+        .forecast-temperature-min {
+            font-size: 18px;
+            font-family: "Courier Prime", monospace;
+        }
 
-.forecast-emojis {
-  font-size: 50px;
-}
+        .forecast-emojis {
+            font-size: 50px;
+        }
+
+        .container {
+            border-radius: 10px;
+            margin: 0 auto;
+            background-color: rgba(27, 229, 236, 0.7);
+            padding: 10px;
 
 
-   </style>
+        }
+    </style>
 </head>
 
 <body>
@@ -182,11 +191,9 @@ h1 {
             </span>
         </div>
 
-        <h2 class="emoji-current-weather">
-            ☀
-        </h2>
-        <br />
-        <h2 class="current-weather-description"></h2>
+        <img src="" alt="Weather Emoji" id="emoji-current-weather">
+        <p class="current-weather-description">
+        </p>
 
         <br />
         <br />
@@ -246,7 +253,12 @@ h1 {
     </div>
     <br>
     <footer>
-        <a href="https://github.com/SarayRicote/Final-Project-Weather-App-She-Codes" target="_blank">Open Source</a> code by <strong> Saray Ricote</strong>
+        <a href="https://github.com/SarayRicote/Final-Project-Weather-App-She-Codes" target="_blank">Open Source</a>
+        code by <strong> <a
+                href="https://www.linkedin.com/in/digital-marketing-specialist-community-manager-alicante-saray-ricote/"
+                target="_blank">
+                Saray Ricote
+            </a>
     </footer>
     <script> function currentDate(date) {
             let currentDate = now.getDate();
@@ -311,6 +323,17 @@ h1 {
             );
             document.querySelector(".current-weather-description").innerHTML =
                 response.data.weather[0].main;
+
+
+            let iconElement = document.querySelector("#emoji-current-weather");
+            iconElement.setAttribute(
+                "src",
+                `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
+            );
+            iconElement.setAttribute("alt", response.data.weather[0].description);
+            celsiusTemperature = response.data.main.temp;
+
+
         }
 
         function defaultCity(cityInput) {
@@ -370,6 +393,8 @@ h1 {
         buttonCurrentLocation.addEventListener("click", getCurrentLocation);
 
         defaultCity("Alicante"); </script>
+
+
 </body>
 
 </html>
